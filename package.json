@@ -1,0 +1,27 @@
+{
+  "name": "@jrg/se",
+  "version": "0.0.1",
+  "description": "Library for interacting with solar edge site.",
+  "main": "server.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrgleason/node-se.git"
+  },
+  "keywords": [
+    "solar",
+    "nodejs"
+  ],
+  "author": "Jackie Gleason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrgleason/node-se/issues"
+  },
+  "homepage": "https://github.com/jrgleason/node-se#readme",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-mount": "^4.0.0"
+  }
+}
