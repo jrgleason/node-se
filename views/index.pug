@@ -1,0 +1,18 @@
+html
+  head
+    link(rel="stylesheet", href="/static/style.css")
+  body#jrg-root-element
+    solar-app-bar
+      div(slot="title") Solar Site
+      div(slot="image")
+        if user == null
+          input( type="submit", value="Login", onclick="window.location='/auth/login';")
+        else
+          h2 Welcome #{user.name}
+    if user != null
+      solar-dashboard
+      script(src="/static/dashboard.mjs", type="module")
+    else
+      h1 Login for more information
+
+  script(src="/static/main.mjs", type="module")
